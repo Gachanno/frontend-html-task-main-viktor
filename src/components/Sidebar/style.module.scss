@@ -1,11 +1,12 @@
 @use '../../index.scss' as *;
 
 .sidebar{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     row-gap: 35px;
-    height: 90vh;
+    min-height: 90vh;
     width: 5vw;
     background-color: $color-sidebar-background-light-default;
     border-radius: 25px;
@@ -57,7 +58,7 @@
 
         .sidebar__theme-button{
             transform: rotate(-180deg);
-            left: 27.5vw;
+            right: -3%;
             background-color: $color-bgc-light-html;
         }
     }
@@ -81,12 +82,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 10vw;
+        right: -45%;
         width: 30px;
         height: 30px;
         border-radius: 100%;
         background-color: $color-sidebar-background-light-default;
-        transition: background-color 0.5s, transform 0.5s, left 0.5s;
+        transition: transform 0.5s, right 0.5s;
     }
 
     &__routes-wrapper{
