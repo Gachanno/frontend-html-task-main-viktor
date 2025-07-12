@@ -1,0 +1,40 @@
+
+$color-sidebar-background-dark-default: #000000;
+$color-sidebar-background-dark-hover: #0F172A;
+$color-sidebar-background-dark-active: #000C45;
+$color-text-dark-default: #AFC1DA;
+$color-text-dark-hover: #DFE9F3;
+$color-text-dark-active: #FFFFFF;
+$color-text-logo-dark-default: #3B82F6;
+$color-button-background-dark-default: #000000;
+$color-button-background-dark-active: #4B5966;
+$color-bgc-dark-html: #1E293B;
+$color-border-sidebar-dark: #262D3A;
+
+// light
+$color-sidebar-background-light-default: #FFFFFF;
+$color-sidebar-background-light-hover: #F2F6FA;
+$color-sidebar-background-light-active: #f0f2ff;
+$color-text-light-default: #97a5b9;
+$color-text-light-hover: #091b31;
+$color-text-light-active: #062AC5;
+$color-text-logo-light-default: #0000b5;
+$color-button-background-light-default: #fff;
+$color-button-background-light-active: #e2e8f0;
+$color-bgc-light-html: #e2e8f0;
+$color-border-sidebar-light: #EBEFF5;
+
+
+
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: $color-bgc-light-html;
+  color: $color-text-light-default;
+
+  &:has(.dark){
+      background-color: $color-bgc-dark-html;
+      color: $color-text-dark-default;
+  }
+}
